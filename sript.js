@@ -14,15 +14,14 @@ function getComputerChoice () {
 
 getComputerChoice(Math.round(Math.random()))
 
-for(let i = 0; i <= 3; i++) {
-    let choiseHuman = prompt('Камень, ножницы, бумага?').toLowerCase()
-    getHumanChoice(choiseHuman);
-}
-
 
 let counterComp = 0;
 let counterHuman = 0;
 
+for(let i = 0; i <= 3; i++) {
+    let choiseHuman = prompt('Камень, ножницы, бумага?').toLowerCase()
+    getHumanChoice(choiseHuman);
+}
 
 function getHumanChoice (choiseHuman, counterComp, counterHuman) {
     let computerChoise = getComputerChoice().toLowerCase()
